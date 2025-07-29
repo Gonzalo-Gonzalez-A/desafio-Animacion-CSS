@@ -208,7 +208,8 @@ footer {
     align-items: center;
     background-color: #145f87;
     color: white;
-    padding: 20px;
+    padding: 10px;
+    gap: 10px;
 }
 
 @media (min-width: 576px) {
