@@ -23,12 +23,13 @@ nav {
 }
 
 nav div.logo {
+    padding:  30px;
     transform: rotate(-10deg);
     animation: move 5s alternate infinite;
 }
 
 
-@keyframes move {
+@keyframes move{
     0% {
         transform: translateX(0);
     }
@@ -59,11 +60,11 @@ ul {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     color: white;
-    background:#209fd8;
+    background-image: url(../img/Fondo-Footer.jpg);
     gap: 10px;
 }
 
@@ -81,6 +82,7 @@ li:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content:end;
     gap: 10px;
     cursor: pointer;
     animation: move 5s alternate infinite;
@@ -115,6 +117,7 @@ li:hover {
    
 .filtros {
     grid-area: filtros;
+    background-color: #20dad6;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -153,7 +156,10 @@ main {
 }
 
 .card {
-    background-color: white;
+    background-image: url(../img/Fondo-Productos2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
@@ -166,9 +172,9 @@ main {
 
 .card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease-in;
+    transition: all 0.7s ease-in-out;
     transform: scale(1.05);
-    background-color: lightgrey;
+    background-image: url(../img/Fondo-Productos.jpg);
 }
 
 .card img{
@@ -202,6 +208,7 @@ main {
 
 footer {
     grid-area: footer;
+    background-color: #145f87;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,6 +248,7 @@ ul {
 .menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     gap: 20px;
 }
 }
@@ -248,7 +256,7 @@ ul {
 @media (min-width: 992px) {
 ul {
     flex-direction: column;
-    justify-content: start;
+    justify-content: stretch;
     align-items: center;
     height: 100vh;
     gap: 20px;
@@ -272,7 +280,7 @@ body {
         "nav filtros"
         "nav main"
         "nav main"
-        "footer footer";
+        "nav footer";
     grid-template-columns: 1fr 10fr;
 }
 
